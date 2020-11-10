@@ -1,0 +1,85 @@
+/*Code Requirements: Create a page layout using flexbox. Implement appropriate media queries for responsive design.*/
+body{
+  background-color: silver;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: justify;
+  margin: 20px
+}
+
+header{
+  background-color: rgb(68, 68, 68);
+  margin: 0;
+}
+
+header h1{
+text-align: center;
+font-size: 52px;
+padding-top: 40px;
+}
+
+header nav{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+header nav a{
+  margin: 10px;
+  text-decoration: none;
+}
+
+a:link{
+color: #000000;
+}
+a:visited{
+  color: #000000;
+}
+a:hover{
+color: rgb(87, 86, 86);
+}
+
+#profimg{
+  width: 100%
+}
+
+footer{
+  background-color: rgb(68, 68, 68);
+  display: flex;
+  justify-content: center;
+}
+
+footer a img {
+width: 50px;
+margin: 25px;
+}
+
+form fieldset{
+  display:flex;
+  flex-direction: column;
+  
+}
+
+@media all and (min-width: 600px){
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+  header h1{
+    margin-top: auto;
+    margin-left: 20px;
+  }
+  header nav{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+  }
+  #profimg{
+    max-width: 400px;
+  }
+  #intro{
+    display: flex;
+  }
+  #top{
+    margin: 40px;
+  }
+}
