@@ -53,6 +53,11 @@ width: 50px;
 margin: 25px;
 }
 
+#email{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 form fieldset{
   display:flex;
   flex-direction: column;
