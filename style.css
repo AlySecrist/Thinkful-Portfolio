@@ -1,14 +1,13 @@
 /*Code Requirements: Create a page layout using flexbox. Implement appropriate media queries for responsive design.*/
 body{
   background-color: silver;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family:sans-serif;
   text-align: justify;
-  margin: 20px
 }
 
 header{
   background-color: rgb(68, 68, 68);
-  margin: 0;
+  width: 100%;  
 }
 
 header h1{
@@ -47,10 +46,15 @@ color: rgb(87, 86, 86);
   margin-left: 25%;
 }
 
+#disclaimer{
+  font-size: 10px;
+}
+
 footer{
   background-color: rgb(68, 68, 68);
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 footer a img {
@@ -61,6 +65,7 @@ margin: 25px;
 #email{
   margin-top: auto;
   margin-bottom: auto;
+  font-weight: bold;
 }
 
 form fieldset{
@@ -85,9 +90,12 @@ form fieldset{
   }
   #profimg{
     max-width: 400px;
+    height: auto;
   }
   #intro{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   #top{
     margin: 40px;
