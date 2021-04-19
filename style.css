@@ -47,12 +47,12 @@ color: rgb(87, 86, 86);
   width: 100%
 }
 
-#project-img{
+.project-img{
   width: 50%;
   margin-left: 25%;
 }
 
-#disclaimer{
+.disclaimer{
   font-size: 10px;
 }
 
