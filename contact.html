@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Alyssa Secrist</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
@@ -14,65 +18,75 @@
         <a href="index.html">Home</a>
       </nav>
     </header>
+    <main>
+      <section id="intro">
+        <img src="images/profile-img.jpg" id="profimg" alt="Profile Picture" />
 
-    <section id="intro">
+        <div id="top">
+          <h2>Intro</h2>
+          <p>
+            As you might have guessed, my name is Alyssa Secrist, and I'm
+            located in Southern Minnesota. I love a good challenge and figuring
+            out puzzles or general problem solving, and the best way to get me
+            to do something is to tell me I can't, so coding makes quite a nice
+            fit for me. I can be deeply caring and completely logical and
+            objective at the same time, and pride myself on being able to see
+            "both sides of the coin".
+          </p>
+        </div>
+      </section>
 
-      <img src="images/profile-img.jpg" id= "profimg" alt="Profile Picture">
+      <hr />
 
-      <div id="top">
-        <h2>Intro</h2>
-        <p>As you might have guessed, my name is Alyssa Secrist, and I'm located in Southern Minnesota. I love a good challenge and figuring out puzzles or general problem solving, and the best way to get me to do something is to tell me I can't, so coding makes quite a nice fit for me. I can be deeply caring and completely logical and objective at the same time, and pride myself on being able to see "both sides of the coin".</p>
-      </div>
-    </section>
+      <form action="https://formspree.io/f/xrgrbbeo" method="POST">
+        <fieldset>
+          <legend>Email Me</legend>
+          <div>
+            <label for="name">
+              Your Name:
+              <input id="name" type="text" name="name" required />
+            </label>
+          </div>
 
-    <hr>
+          <br />
 
-    <form
-            action='https://formspree.io/f/xrgrbbeo'
-            method='POST'
-          >
-            <fieldset>
-              <legend>Email Me</legend>
-              <div>
-                <label for='name'>
-                  Your Name:
-                  <input id='name' type='text' name='name' required>
-                </label>
-              </div>
+          <div>
+            <label for="user-email">
+              Your Email:
+              <input id="user-email" type="email" name="_replyto" required />
+            </label>
+          </div>
 
-              <br />
+          <br />
 
-              <div>
-                <label for='email'>
-                  Your Email:
-                  <input id='email' type='email' name='_replyto' required>
-                </label>
-              </div>
+          <div>
+            <label for="message">
+              Your Message:
+              <textarea id="message" name="message" required></textarea>
+            </label>
+          </div>
 
-              <br />
+          <br />
 
-              <div>
-                <label for='message'>
-                  Your Message:
-                  <textarea id='message' name='message'required></textarea>
-                </label>
-              </div>
+          <button type="submit" name="send">Send</button>
+        </fieldset>
+      </form>
+    </main>
 
-              <br />
-            
-              <button type='submit' name='send'>Send</button>
-            </fieldset>
-          </form>
+    <footer id="contact">
+      <a href="https://www.github.com/AlySecrist" target="blank"
+        ><img src="images/github.png" alt="GitHub link"
+      /></a>
 
-          <footer id="contact">
-            <a href="https://www.github.com/AlySecrist" target="blank"><img src="images\github.png"></a>
-    
-            <a href="https://www.linkedin.com/in/alyssa-secrist-50437aa1" target="blank"><img src= "images\linkedin.png"></a>
-    
-            <a href="contact.html"><img src= "images\email.png"></a>
-            
-            <a id="email" href="mailto:alyssa.secrist@gmail.com">Email Direct</a>
-    
-          </footer>
+      <a
+        href="https://www.linkedin.com/in/alyssa-secrist-50437aa1"
+        target="blank"
+        ><img src="images/linkedin.png" alt="LinkedIn link"
+      /></a>
+
+      <a href="contact.html"><img src="images/email.png" alt="Email link" /></a>
+
+      <a id="email" href="mailto:alyssa.secrist@gmail.com">Email Direct</a>
+    </footer>
   </body>
 </html>
